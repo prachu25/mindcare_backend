@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const user = JSON.parse(localStorage.getItem("user"));
   if (!user || !user.id) return;
 
-  fetch(`http://localhost:8081/user/profile/${user.id}`)
+  fetch(`/user/profile/${user.id}`)
     .then(res => res.json())
     .then(data => {
       document.getElementById("floatingUserName").innerText =
@@ -45,7 +45,7 @@ function loadUserStats() {
   const user = JSON.parse(localStorage.getItem("user"));
   if (!user || !user.id) return;
 
-  fetch(`http://localhost:8081/user/${user.id}/status`)
+  fetch(`/user/${user.id}/status`)
     .then(res => {
       if (!res.ok) throw new Error("Failed to load stats");
       return res.json();
@@ -128,7 +128,7 @@ function saveSleep() {
   const user = JSON.parse(localStorage.getItem("user"));
   const sleepHours = document.getElementById("sleepRange").value;
 
-  fetch(`http://localhost:8081/user/${user.id}/sleep`, {
+  fetch(`/user/${user.id}/sleep`, {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ sleepHours })
@@ -245,7 +245,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const userId = user?.id;
   if (!userId) return;
 
-  fetch(`http://localhost:8081/user/assessment/history/${userId}`)
+  fetch(`/user/assessment/history/${userId}`)
     .then(res => res.json())
     .then(res => {
 
