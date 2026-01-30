@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Supportive-Chat | MindCare</title>
+  <link rel="stylesheet" href="/css/chat.css" />
+</head>
+
+<body>
+
+  <div class="chat-app">
+
+    <!-- HEADER -->
+    <header class="chat-header">
+      <h2>MindCare</h2>
+      <button id="newChatBtn">+ New Chat</button>
+    </header>
+
+    <!-- CHAT MESSAGES -->
+    <div class="messages">
+      <div class="chat-inner" id="chatContainer"></div>
+    </div>
+
+
+    <!-- INPUT -->
+    <form class="chat-input" id="chatForm">
+      <input type="text" id="userMessage" placeholder="Type your message..." required />
+      <button type="submit">Send</button>
+    </form>
+
+  </div>
+
+
+  <script src="/js/chat.js"></script>
+</body>
+
+</html>
