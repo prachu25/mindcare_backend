@@ -51,7 +51,7 @@ form.addEventListener("submit", function (e) {
       msg.style.color = "green";
 
       // STEP 2: CHECK PROFILE EXISTS
-      fetch(`1/user/profile/exists/${userId}`)
+      fetch(`/user/profile/exists/${userId}`)
         .then(res => res.json())
         .then(exists => {
 

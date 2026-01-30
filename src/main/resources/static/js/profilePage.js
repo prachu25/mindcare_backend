@@ -122,7 +122,6 @@ document
             if (!res.ok) throw new Error("Save failed");
 
             localStorage.setItem("profileCreated", "true");
-            alert("Profile saved successfully ");
             window.location.href = "user-dashboard.html";
 
         } catch (err) {

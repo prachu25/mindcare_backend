@@ -2,35 +2,33 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <title>Supportive-Chat | MindCare</title>
-  <link rel="stylesheet" href="/css/chat.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support-chat | MindCare</title>
+  <link rel="stylesheet" href="/css/chat.css">
 </head>
 
 <body>
+  <div class="container">
 
-  <div class="chat-app">
-
-    <!-- HEADER -->
-    <header class="chat-header">
-      <h2>MindCare</h2>
-      <button id="newChatBtn">+ New Chat</button>
+    <!-- Header -->
+    <header class="app-header">
+      <h1 class="heading">Hello 👋</h1>
+      <h2 class="sub-heading">How can I support you today?</h2>
     </header>
 
-    <!-- CHAT MESSAGES -->
+    <!-- CHAT (MindCare existing ID) -->
     <div class="messages">
-      <div class="chat-inner" id="chatContainer"></div>
+      <div id="chatContainer" class="chats-container"></div>
     </div>
 
-
-    <!-- INPUT -->
-    <form class="chat-input" id="chatForm">
-      <input type="text" id="userMessage" placeholder="Type your message..." required />
-      <button type="submit">Send</button>
+    <!-- INPUT (MindCare existing ID) -->
+    <form id="chatForm" class="prompt-form">
+      <input type="text" id="userMessage" class="prompt-input" placeholder="Type here..." required />
+      <button type="submit" id="sendBtn">➤</button>
     </form>
 
   </div>
-
 
   <script src="/js/chat.js"></script>
 </body>
