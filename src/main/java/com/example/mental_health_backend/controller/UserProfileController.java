@@ -30,7 +30,7 @@ import com.example.mental_health_backend.service.UserProfileService;
 import com.example.mental_health_backend.service.UserService;
 
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/api/user")
 public class UserProfileController {
 
         @Autowired

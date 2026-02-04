@@ -12,9 +12,8 @@ import com.example.mental_health_backend.entity.User;
 import com.example.mental_health_backend.service.ChatMessageService;
 import com.example.mental_health_backend.service.UserService;
 
-@CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/chat")
+@RequestMapping("/api/chat")
 public class ChatController {
 
     @Autowired

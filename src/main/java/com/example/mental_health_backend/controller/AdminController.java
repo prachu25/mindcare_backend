@@ -18,7 +18,7 @@ import com.example.mental_health_backend.entity.User;
 import com.example.mental_health_backend.service.AdminService;
 
 @RestController
-@RequestMapping("/admin")
+@RequestMapping("api/admin")
 public class AdminController {
 
     @Autowired

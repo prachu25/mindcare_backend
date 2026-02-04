@@ -16,7 +16,7 @@ import com.example.mental_health_backend.entity.User;
 import com.example.mental_health_backend.service.AuthService;
 
 @RestController
-@RequestMapping("/auth")
+@RequestMapping("/api/auth")
 public class AuthController {
 
     @Autowired
